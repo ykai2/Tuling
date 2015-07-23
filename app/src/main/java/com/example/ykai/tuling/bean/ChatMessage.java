@@ -11,6 +11,16 @@ public class ChatMessage {
     private String msg;
     private Type type;
     private Date date;
+    public ChatMessage(){
+
+    }
+    public ChatMessage(String msg,Type type,Date date){
+        super();
+        this.msg=msg;
+        this.type=type;
+        this.date=date;
+
+    }
 
     public String getName() {
         return name;

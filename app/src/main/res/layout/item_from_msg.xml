@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/id_form_msg_date"
+        android:id="@+id/id_from_msg_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Tuling"
+                android:text="小慕"
                 android:textSize="18sp" >
             </TextView>
         </LinearLayout>

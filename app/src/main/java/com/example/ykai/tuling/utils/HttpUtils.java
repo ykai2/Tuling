@@ -33,10 +33,13 @@ public class HttpUtils {
     public static ChatMessage sendMessage(String msg){
         ChatMessage chatMessage=new ChatMessage();
         String jsonRes=doGet(msg);
+
         Gson gson=new Gson();
         Result result=null;
         try{
             result = gson.fromJson(jsonRes, Result.class);
+            chatMessage.setMsg(result.getText());
+
 
         }catch (JsonSyntaxException e){
             chatMessage.setMsg("服务器繁忙");
